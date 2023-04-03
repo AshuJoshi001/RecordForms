@@ -1,0 +1,12 @@
+import { LightningElement, api } from 'lwc';
+import NAME_FIELD from '@salesforce/schema/Opportunity.Name';
+import ClLOSEDATE_FIELD from '@salesforce/schema/Opportunity.CloseDate';
+import STAGENAME_FIELD from '@salesforce/schema/Opportunity.StageName';
+export default class Recordformsimple extends LightningElement {
+    @api recordId;
+    @api objectApiName;
+    fields = [NAME_FIELD, ClLOSEDATE_FIELD, STAGENAME_FIELD];
+    handleSubmit(event){
+
+    }
+}
